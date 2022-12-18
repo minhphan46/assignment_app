@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 
 class Users extends GetxController {
   String? id;
-  var _users = [
+  final _users = [
     User(name: "Minh"),
     User(name: "Phong"),
     User(name: "Thang"),

@@ -1,5 +1,4 @@
-import 'package:assignment_app/screens/nuoc_screen.dart';
-import 'package:assignment_app/screens/rac_screen.dart';
+import 'package:assignment_app/screens/list_screen.dart';
 import 'package:assignment_app/screens/random_screen.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
@@ -31,16 +30,12 @@ class _TabsScreenState extends State<TabsScreen> {
   Widget build(BuildContext context) {
     _pages = [
       {
-        'page': RacScreen(),
-        'title': 'Do Rac',
-      },
-      {
-        'page': NuocScreen(),
-        'title': 'Lay Nuoc',
-      },
-      {
         'page': RandomScreen(),
         'title': 'Random',
+      },
+      {
+        'page': ListScreen(),
+        'title': 'List',
       },
     ];
 
@@ -59,15 +54,11 @@ class _TabsScreenState extends State<TabsScreen> {
         height: 60,
         items: const [
           Icon(
-            Icons.delete_rounded,
-            color: Colors.white,
-          ),
-          Icon(
-            Icons.water_drop_sharp,
-            color: Colors.white,
-          ),
-          Icon(
             Icons.filter_tilt_shift,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.list_alt,
             color: Colors.white,
           ),
         ],
